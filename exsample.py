@@ -1,10 +1,12 @@
-from src.linearRegressor import *
+from linearRegressor import *
 from matplotlib import pyplot as plt
 
 Xs = [1.2, 2, 2.8, 4.1]
 Ys = [2.1, 4.1, 6, 8.4]
 
 model = linearRegressor(Xs, Ys)
+
+plt.style.use("ggplot")
 
 # Plot the stuff
 plt.scatter(Xs, Ys, c = "green", label = "Data")
@@ -16,7 +18,7 @@ for x in Xs:
 
 plt.plot(Xs, modelYs, c = 'black', ls = '--', label = 'Regression')
 
-plt.title("Eksempel")
+#plt.title("Eksempel")
 plt.ylabel("Y værdi")
 plt.xlabel("X værdi")
 plt.legend(loc='best')
