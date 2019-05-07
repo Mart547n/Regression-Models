@@ -1,4 +1,5 @@
 from linearRegressor import *
+from PotensRegression import *
 from matplotlib import pyplot as plt
 
 Xs = [1.2, 2, 2.8, 4.1]
@@ -23,3 +24,5 @@ plt.ylabel("Y værdi")
 plt.xlabel("X værdi")
 plt.legend(loc='best')
 plt.show()
+
+
